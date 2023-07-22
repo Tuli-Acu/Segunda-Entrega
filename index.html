@@ -8,8 +8,16 @@
     <!-- Link a Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <!-- Link para animación -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Link a mi CSS -->
     <link rel="stylesheet" href="CSS/estilos.css">
+
+    <!-- Link a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 
     <title>LDR Folk</title>
     <link rel="shortcut icon" href="assets/logo.png">   
@@ -20,13 +28,12 @@
         <!-- menu de bootstap-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">LDR Folk</a>
+              <a class="nav-link ldr"  href="../Los-del-rio-web/index.html">LDR Folk</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="../Los-del-rio-web/index.html">Home</a>
                   <a class="nav-link" href="../Los-del-rio-web/pages/quienes.html">Quienes Somos</a>
                   <a class="nav-link" href="../Los-del-rio-web/pages/galeria.html">Galeria de Fotos</a>
                   <a class="nav-link" href="../Los-del-rio-web/pages/nuestra.html">Nuestra Historia</a>
@@ -37,14 +44,15 @@
           </nav>
     </header>
         
-    <main class="home">
+    <main class="animate_animated animate__pulse animate_infinite">
         <div class="logo">
             <img src="assets/logo.png" alt="logo-los-del-rio">
         </div>
-        
-        <h1> La inspiración está en nuestras raíces </h1>
-        
     </main>
+
+      <section class="bajada">
+        La inspiración está en nuestras raíces
+      </section>
 
     <footer>
         <p> * Todos los derechos reservados * </p>

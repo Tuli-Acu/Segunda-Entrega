@@ -14,6 +14,8 @@ html{
 
 header .navbar{
     background-color: #000000;
+    color: whitesmoke;
+    border-bottom: 1px solid #333333;
 }
 
 .navbar-brand{
@@ -26,18 +28,26 @@ header .navbar{
     color: whitesmoke;
 }
 
+.ldr{
+    font-size:x-large;
+    font-weight: bold;
+    color: #edde0f;
+}
+
 /* propiedades del Body*/
 
 body{
     background-color: #000000;
 }
 
-
-main .home{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    animation:animate__pulse;
+    animation-duration: 4.5s;
+    animation-iteration-count:infinite;
 }
 
 /* propiedades de los textos*/
@@ -46,6 +56,13 @@ main h1{
     margin-bottom: 1rem;
     text-align: center;
     color: #e5b119;
+}
+
+.bajada{
+    color: #e5b119;
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Kalam', cursive;
 }
 
 /* Estilos Home HTML*/
@@ -63,10 +80,12 @@ main .logo img{
 
 footer{
     margin-top: 40px;
+    height: 10%;
 }
 
 footer p{
     text-align: center;
+    color: whitesmoke;
 }
 
 
@@ -74,8 +93,7 @@ footer p{
 @media screen and (min-width:600px){
     main .home{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1;
         align-items: center;
     }
 }
@@ -85,9 +103,9 @@ footer p{
 @media screen and (min-width:1024px){
     main .home{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1;
         align-items: center;
+        height: 100%;
     }
 }
 
@@ -105,12 +123,87 @@ main .botones{
 
 /* Estilos Quienes Somos HTML*/
 
-.quienes{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+/*
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+*/
+
+.perfiles{
+    position: relative;
+    display: inline-block;
 }
 
+.foto-perfil-marce{
+    perspective: 1000px;
+}
+
+.foto-perfil-marce:hover .texto-marce{
+    opacity: 1;
+}
+
+.foto-perfil-marce:hover img{
+    transform: rotateY(180deg);
+    opacity: 0.2;
+    filter: blur(10px);
+    filter: grayscale(60%);
+}
+
+.texto-marce{
+    position: absolute;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0px 15px 25px rgba(59, 58, 58, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(55, 54, 54, 0.7);
+    color: honeydew;
+}
+
+
+.foto-perfil-juane{
+    perspective: 1000px;
+}
+
+.foto-perfil-juane:hover .texto-juane{
+    opacity: 1;
+}
+
+.foto-perfil-juane:hover img{
+    transform: rotateY(180deg);
+    opacity: 0.2;
+    filter: blur(10px);
+    filter: grayscale(60%);
+}
+
+.texto-juane{
+    position: absolute;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0px 15px 25px rgba(59, 58, 58, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(55, 54, 54, 0.7);
+    color: honeydew;
+}
+
+
+
+
+
+
+
+
+
+/*
 .card-mia{
     display: flex;
     flex-direction: column;
@@ -124,7 +217,7 @@ main .botones{
 .card-mia h2{
     margin-bottom: 1rem;
 }
-
+*/
 
 /* Media querie Tablet */
 
@@ -143,6 +236,7 @@ main .botones{
         grid-template-rows: 2, 50%;
     }      
 }
+
 
 /* Estilos de Galeria html */
 
