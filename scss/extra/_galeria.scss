@@ -1,0 +1,39 @@
+/* Estilos Galeria HTML */
+
+.galeria{
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-family:'Kalam', cursive;
+}
+
+.carousel-item{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+/* propiedades de los botones*/
+
+main .botones{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+main .botones .boton-fotos{
+    color: whitesmoke;
+    background-color: $color-principal;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20%;
+}
+
+main .botones .boton-video{
+    color: whitesmoke;
+    background-color: $color-secundario;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20%;
+}

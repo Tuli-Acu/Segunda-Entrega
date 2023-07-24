@@ -1,0 +1,16 @@
+/* Estilos Contacto HTML */
+
+.bajada-contacto{
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-family:'Kalam', cursive;
+}
+
+.boton-enviar{
+    color: whitesmoke;
+    background-color: $color-secundario;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20%;
+    margin-top: 40px;
+}

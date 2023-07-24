@@ -1,200 +1,149 @@
-/* estilos generales para todos los dispositivos*/
+p {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #000000;
+  color: whitesmoke; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.card-text {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  font-size: 1rem; }
 
-html{
-   font-family: 'Roboto', sans-serif;
-}
+/* estilo general HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* Estilos de Header*/
+html {
+  font-family: 'Roboto', sans-serif; }
 
-header .navbar{
-    background-color: #000000;
-    color: whitesmoke;
-    border-bottom: 1px solid #333333;
-}
+/* Estolos del Header */
+header {
+  background-color: #000000; }
 
-.navbar-brand{
-    font-size: x-large;
-    font-weight: bold;
-    color: whitesmoke;
-}
+header .navbar {
+  background-color: #000000;
+  color: whitesmoke;
+  border-bottom: 1px solid #333333; }
 
-.nav-link{
-    color: whitesmoke;
-}
+.navbar-brand {
+  font-size: x-large;
+  font-weight: bold;
+  color: whitesmoke; }
 
-.ldr{
-    font-size:x-large;
-    font-weight: bold;
-    color: #edde0f;
-}
+.nav-link {
+  color: whitesmoke; }
 
-/* propiedades del Body*/
+.ldr {
+  font-size: x-large;
+  font-weight: bold;
+  color: #edde0f; }
 
-body{
-    background-color: #000000;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    animation:animate__pulse;
-    animation-duration: 4.5s;
-    animation-iteration-count:infinite;
-}
-
-/* propiedades de los textos*/
-
-main h1{
+/* Estilos del Main */
+main {
+  background-color: #000000; }
+  main h1 {
     margin-bottom: 1rem;
     text-align: center;
     color: #e5b119;
-}
-
-.bajada{
-    color: #e5b119;
-    text-align: center;
-    font-size: 2rem;
-    font-family:'Kalam', cursive;
-    margin-bottom: 40px;
-}
-
-/* Estilos Home HTML*/
-
-main .logo{
-    display: flex;
-    justify-content: center;
-}
-
-main .logo img{
-    align-items: center;
-    width: 80%;
-}
-
-/* Estilos de Footer */
-
-
-footer p{
-    text-align: center;
-    color: whitesmoke;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-/* propiedades de media queries Tablet*/
-@media screen and (min-width:600px){
-    main .home{
-        display: grid;
-        grid-template-columns: 1;
-        align-items: center;
-    }
-}
-/* propiedades de media queries Desktop*/
-
-@media screen and (min-width:1024px){
-    main .home{
-        display: grid;
-        grid-template-columns: 1;
-        align-items: center;
-        height: 100%;
-    }
-}
-
-main h1{
-    grid-area: h1;
-}
-
-main .logo{
-    grid-area: img;
-}
-
-main .botones{
-    grid-area: botones;
-}
-
-/* Estilos Quienes Somos HTML*/
-
-.quienes-bajada{
-    color: #e5b119;
-    text-align: center;
-    font-size: 5rem;
-    font-family:'Kalam', cursive;
-}
-
-.h2-quienes{
+    font-family: 'Kalam', cursive;
+    padding: 10px; }
+  main h2 {
     font-size: 2rem;
     color: whitesmoke;
     margin-bottom: 40px;
-}
+    font-family: 'Kalam', cursive;
+    text-align: center; }
 
-/* Estilos de Galeria html */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  animation: animate__pulse;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite; }
 
-.galeria{
-    text-align: center;
-    justify-content: center;
-    color: whitesmoke;
-    font-family:'Kalam', cursive;
-}
+.bajada {
+  text-align: center;
+  background-color: #000000;
+  color: #e5b119;
+  font-family: 'Kalam', cursive;
+  font-size: 2.5rem;
+  padding: 2rem;
+  padding-bottom: 5rem; }
 
-.carousel-item{
-    height: 80%;
-    width: 100%;
-    margin-bottom: 50px;
-}
+/* Estilos del Footer */
+footer {
+  background-color: #000000;
+  width: 100%;
+  height: 90%;
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+  padding: 1rem; }
 
+/* Estilos HOME */
+main .logo {
+  display: flex;
+  justify-content: center; }
+
+main .logo img {
+  align-items: center;
+  width: 80%; }
+
+/* Estilos Quienes Somos HTML */
+/* Estilos Galeria HTML */
+.galeria {
+  text-align: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Kalam', cursive; }
+
+.carousel-item {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 50px; }
 
 /* propiedades de los botones*/
+main .botones {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem; }
 
-main .botones{
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-}
+main .botones .boton-fotos {
+  color: whitesmoke;
+  background-color: #e5b119;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20%; }
 
-main .botones .boton-fotos{
-    color: whitesmoke;
-    background-color: #e5b119;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 20%;
-}
+main .botones .boton-video {
+  color: whitesmoke;
+  background-color: #c21931;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20%; }
 
-main .botones .boton-video{
-    color: whitesmoke;
-    background-color: #c21931;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 20%;
-}
+/* Estilos Nuestra Historia HTML */
+.nuestra-historia {
+  text-align: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Kalam', cursive; }
 
-/* Estilos Nuestra Historia HTML*/
+/* Estilos Contacto HTML */
+.bajada-contacto {
+  text-align: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Kalam', cursive; }
 
-.nuestra-historia{
-    text-align: center;
-    justify-content: center;
-    color: whitesmoke;
-    font-family:'Kalam', cursive;}
-
-/* Estilos de Contacto HTML*/
-
-.bajada-contacto{
-    text-align: center;
-    justify-content: center;
-    color: whitesmoke;
-    font-family:'Kalam', cursive;
-}
-
-.boton-enviar{
-    color: whitesmoke;
-    background-color: #c21931;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 20%;
-    margin-top: 40px;
-}
+.boton-enviar {
+  color: whitesmoke;
+  background-color: #c21931;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20%;
+  margin-top: 40px; }

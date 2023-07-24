@@ -1,0 +1,8 @@
+// mixin
+
+@mixin estilos-base($width, $height, $color){
+    width: $width;
+    height: $height;
+    color: $color;
+}
+

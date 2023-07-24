@@ -1,0 +1,14 @@
+/* Estilos del Footer */
+
+footer{
+    background-color: $color-background;
+    @include estilos-base(100%, 90%, whitesmoke);
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+p{
+    @extend %estilos;
+}
+
