@@ -43,7 +43,7 @@ header .navbar {
 
 /* Estilos del Main */
 main {
-  background-color: #000000; }
+  background-color: #000000;}
   main h1 {
     margin-bottom: 1rem;
     text-align: center;
@@ -62,9 +62,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  animation: animate__pulse;
-  animation-duration: 4.5s;
-  animation-iteration-count: infinite; }
+}
 
 .bajada {
   text-align: center;
@@ -73,7 +71,8 @@ main {
   font-family: 'Kalam', cursive;
   font-size: 2.5rem;
   padding: 2rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+}
 
 /* Estilos del Footer */
 footer {
@@ -83,16 +82,34 @@ footer {
   color: whitesmoke;
   text-align: center;
   align-items: center;
-  padding: 1rem; }
+  padding: 1rem; 
+}
 
 /* Estilos HOME */
 main .logo {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  }
 
 main .logo img {
   align-items: center;
-  width: 80%; }
+  width: 80%; 
+}
+
+.animate__animated{
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+}
+
+
+.home{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
 
 /* Estilos Quienes Somos HTML */
 /* Estilos Galeria HTML */
@@ -106,6 +123,15 @@ main .logo img {
   height: 80%;
   width: 100%;
   margin-bottom: 50px; }
+
+.video{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
 
 /* propiedades de los botones*/
 main .botones {
@@ -147,3 +173,11 @@ main .botones .boton-video {
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 20%;
   margin-top: 40px; }
+
+.contacto{
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  }
